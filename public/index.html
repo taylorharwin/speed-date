@@ -8,6 +8,7 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="../bower_components/jquery-ui-1.10.4.custom/css/cupertino/jquery-ui-1.10.4.custom.css">
     </head>
     <body>
 
@@ -16,25 +17,21 @@
                 <h1>Generic Travel Application</h1>
             </div>
 
-        <div class="depart">
-            <form action="demo_form.asp"> Depart: 
-            <input type="date" name="bday">
-            <input type="submit">
-            </form>
+        <div class='depart'> Departure Info:
+            <input type="text" name="date" id="date1" />
+        </div>
 
-        <div class="return">
-            <form action="demo_form.asp"> Return: 
-            <input type="date" name="bday">
-            <input type="submit">
-            </form>
+         <div class='return'> Return Info:
+            <input type="text" name="date" id="date2" />
+        </div>
 
         <div class="row">
-            <div class="col-md-12 departure"><h3> Departure plan: </h3></div>
-            <div class="col-md-12 arrival"><h3>Arrival plan: </h3></div>
+            <div class="col-md-12 departure"><h3 class="leaving"> Departure plan: </h3></div>
+            <div class="col-md-12 arrival"><h3 class="returning">Arrival plan: </h3></div>
         </div>
         </div>
 
-        
+
             <div class=travelplan>
                 <h1>Book a trip</h1>
                 <p><a class="btn btn-lg btn-success" href="#">Book! <span class="glyphicon glyphicon-ok"></span></a></p>
@@ -62,6 +59,7 @@
         <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="../bower_components/bootstrap/js/collapse.js"></script>
         <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <script src="../bower_components/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
