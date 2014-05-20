@@ -11,6 +11,9 @@ body {
     padding-bottom: 20px;
     width: 900px;
 }
+h1 {
+    width:600px;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -36,6 +39,9 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
 }
+.container {
+    width:800px;
+}
 
 /* Custom page footer */
 .footer {
@@ -44,10 +50,6 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
-
-.container-narrow > hr {
-    margin: 30px 0;
-}
 
 /* Main marketing message and sign up button */
 .jumbotron {
