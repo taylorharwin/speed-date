@@ -7,7 +7,7 @@ $(function(){
       var dateAsString = dateText;
       console.log(dateAsString);
       var dateAsString = $(this).datepicker("getDate");
-      $(".leaving").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li>').fadeIn();
+      $(".leaving").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li');
     }
   });
 
@@ -16,13 +16,22 @@ $(function(){
       var dateAsString = dateText;
       console.log(dateAsString);
       var dateAsString = $(this).datepicker("getDate");
-    $(".returning").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") +'</li>').fadeIn();
+    $(".returning").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") +'</li>');
     }
+  });
+
+$("#toggle").click(function() {
+    $('[data-slidepanel]').slidepanel({
+      orientation: 'top',
+      mode: 'overlay'
+    });
   });
 
 
 
+
 });
+
 
 
 

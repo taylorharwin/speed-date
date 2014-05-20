@@ -44,6 +44,7 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
+
 .container-narrow > hr {
     margin: 30px 0;
 }
@@ -68,11 +69,6 @@ body {
     margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
 
     /* Remove the padding we set earlier */
     .header,
@@ -95,9 +91,39 @@ body {
         margin-top: 30px;
         margin-bottom: 50px;
     }
-    
+
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
     }
+
+
+nav {
+    width: 100%;
+    background: black;
+    text-align: right;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+}
+#panel {
+    position: absolute;
+    right: 0;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 15px black;
+    background: white;
+    padding: 10px;
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: scaleX(0.00001);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    outline: 0;
+}
+#panel:target {
+    -webkit-transform: scaleX(1);
+}
+
