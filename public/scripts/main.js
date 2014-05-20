@@ -1,5 +1,18 @@
 $(function(){
 
+  var pickerOpts = {
+    showOn: 'button',
+    beforeShow: function (input, inst) {
+        setTimeout(function () {
+            inst.dpDiv.css({
+                top:500,
+                left:500,
+                float:'right'
+              });
+          }, 0);
+      }
+  };
+
   console.log('ready');
 
   $( "#date1").datepicker({
@@ -28,9 +41,19 @@ $("#toggle").click(function() {
   });
 
 
+$("#jan").on('click', function(){
+  $("#calbin1").datepicker(pickerOpts);
+});
+
+$("#feb").on('click', function(){
+  $("#calbin2").datepicker(pickerOpts);
+});
 
 
 });
+
+
+
 
 
 
