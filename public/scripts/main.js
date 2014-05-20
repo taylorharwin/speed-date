@@ -1,19 +1,11 @@
 $(function(){
 
-  var pickerOpts = {
-    showOn: 'button',
-    beforeShow: function (input, inst) {
-        setTimeout(function () {
-            inst.dpDiv.css({
-                top:500,
-                left:500,
-                float:'right'
-              });
-          }, 0);
-      }
-  };
+
 
   console.log('ready');
+
+  $("#calbin1").hide();
+  $("#calbin2").hide();
 
   $( "#date1").datepicker({
     onSelect: function(dateText, inst){
@@ -41,11 +33,16 @@ $("#toggle").click(function() {
   });
 
 
-$(".month").on('click', function(){
-  var toAdd = $('calbin')
-    var newCal = $("#calbin2").datepicker(pickerOpts);
+$("#may").on('click', function(){
+  $("#calbin1").toggle();
+    var newCal = $("#calbin1").datepicker();
     // $('#calbin2').addChild(newCal);
   });
+
+$("#jun").on('click', function(){
+    $("#calbin2").toggle();
+  $("#calbin2").datepicker({defaultDate: '+1m'});
+});
 
 
 // $("#feb").on('click', function(){

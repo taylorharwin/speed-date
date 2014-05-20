@@ -14,9 +14,7 @@ app.get('/', function (req, res) {
     res.render('index.html');
   });
 
-app.get('/speed_date', function(req, res){
-  res.render('speed_date.html');
-});
+
 
 var port = process.env.PORT;
 
