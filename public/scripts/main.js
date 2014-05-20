@@ -49,38 +49,44 @@ $('.close').on('click', function(){
 
 $("#may").on('click', function(){
   $("#calbin1").toggle();
-    var newCal = $("#calbin1").datepicker();
-    // $('#calbin2').addChild(newCal);
+    var newCal = $("#calbin1").datepicker({
+      onSelect: function(dateText, inst){
+        var dateAsString = dateText;
+        console.log(dateAsString);
+        var dateAsString = $(this).datepicker("getDate");
+        $(".plan1").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li');
+        chart.load({columns:[['Bookings by Month',,9,6,8,7,2,2,10,11,6,7,8,2]]});
+      }
+    });
   });
 
 $("#jun").on('click', function(){
     $("#calbin2").toggle();
-  $("#calbin2").datepicker({defaultDate: '+1m'});
+  $("#calbin2").datepicker({
+    defaultDate: '+1m',
+      onSelect: function(dateText, inst){
+        var dateAsString = dateText;
+        console.log(dateAsString);
+        var dateAsString = $(this).datepicker("getDate");
+        $(".plan2").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li');
+      chart.load({columns:[['Bookings by Month',9,6,8,7,2,3,10,11,6,7,8,2]]});
+      }
+    });
 });
 
 
 var chart = c3.generate({
-  bindto: '#chart',
-      data: {
-        columns: [
-            ['Spring', 10],
-            ['Summer', 30],
-            ['Winter', 50],
-            ['Fall', 10],
-        ],
-        type : 'donut'
+    bindto: '#chart',
+    size: {
+        height: 280,
+        width: 280
     },
-    donut: {
-        title: "Popular Dates",
-        onclick: function (d, i) { console.log(d, i); },
-        onmouseover: function (d, i) { console.log(d, i); },
-        onmouseout: function (d, i) { console.log(d, i); }
+        data: {
+          columns: [
+      ['Bookings by Month',9,6,8,7,1,2,10,11,6,7,8,2]
+      ],
     }
-});
-
-
-
-
+    });
 
 });
 

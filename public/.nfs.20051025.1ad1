@@ -25,11 +25,13 @@
 <h1>Speed Date</h1>
     <p class="btn btn-lg btn-success showchart"><a href="#panel">Find Dates</a><p>
        <div class="row">
-            <div class="col-md-12 departure"><h3 class="leaving"> Departure plan: </h3><span class='plan1'></span></div>
-            <div class="col-md-12 arrival"><h3 class="returning">Arrival plan: </h3><span class='plan2'></span></div>
-        </div>
+            <div class="col-md-12 departure"><h3 class="leaving"> Departure plan: </h3></div>
     <div id="chart"></div>
+            <div class="col-md-12 arrival"><h3 class="returning">Arrival plan: </h3></div>
         </div>
+        </div>
+
+
 
             <div class=travelplan>
                 <h1>Book a trip</h1>
