@@ -41,13 +41,16 @@ $("#toggle").click(function() {
   });
 
 
-$("#jan").on('click', function(){
-  $("#calbin1").datepicker(pickerOpts);
-});
+$(".month").on('click', function(){
+  var toAdd = $('calbin')
+    var newCal = $("#calbin2").datepicker(pickerOpts);
+    // $('#calbin2').addChild(newCal);
+  });
 
-$("#feb").on('click', function(){
-  $("#calbin2").datepicker(pickerOpts);
-});
+
+// $("#feb").on('click', function(){
+//   $("#calbin2").datepicker(pickerOpts);
+// });
 
 
 });

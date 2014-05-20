@@ -132,12 +132,12 @@ nav a {
 #calbin1{
     position:absolute;
     float:right;
-    margin-left:300px;
+    margin-left:400px;
 }
 #calbin2{
     position:absolute;
     float:right;
-    margin-left:500px;
+    margin-left:600px;
 }
 div.ui-datepicker, .ui-datepicker td{
  font-size:10px;
