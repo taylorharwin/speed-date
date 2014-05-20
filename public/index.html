@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="../bower_components/jquery-ui-1.10.4.custom/css/cupertino/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="../bower_components/c3/c3.css">
+
     </head>
     <body>
 
@@ -17,14 +19,14 @@
  <div class="container">
 <div class="header">
 
-                    <div class="label label-info"id="calbin1">Departure month</div>
-                    <div class="label label-info"id="calbin2">Return month</div>
+
+
 
 <h1>Speed Date</h1>
-    <p class="btn btn-lg btn-success"><a href="#panel">Find Dates</a><p>
-
+    <p class="btn btn-lg btn-success showchart"><a href="#panel">Find Dates</a><p>
        <div class="row">
             <div class="col-md-12 departure"><h3 class="leaving"> Departure plan: </h3></div>
+    <div id="chart"></div>
             <div class="col-md-12 arrival"><h3 class="returning">Arrival plan: </h3></div>
         </div>
         </div>
@@ -44,7 +46,9 @@
         </div>
 
      <div id="panel">
-    <a href="#">close</a>
+    <a class="close" href="#">close</a>
+                    <div class="label label-info"id="calbin1">Departure month</div>
+                    <div class="label label-info"id="calbin2">Return month</div>
     <ul>
     <div class='month ' id='jan'> January </div>
     <div class='month ' id='feb'> February </div>
@@ -84,6 +88,9 @@
         <script src="../bower_components/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="../bower_components/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="../bower_components/momentjs/min/moment.min.js"></script>
+        <script src="../bower_components/d3/d3.min.js"></script>
+        <script src="../bower_components/c3/c3.min.js"></script>
+
 
 
         <!-- endbuild -->

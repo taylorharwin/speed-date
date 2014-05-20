@@ -113,9 +113,9 @@ nav a {
 }
 #panel {
     position: absolute;
-    right: 600px;
-    width: 180px;
-    height:300px;
+    right: 200px;
+    width: 400px;
+    height:500px;
     top: 0;
     bottom: 0;
     box-shadow: 0px 0px 15px black;
@@ -132,16 +132,28 @@ nav a {
 #calbin1{
     position:absolute;
     float:right;
-    margin-left:280px;
+    left:160px;
+    top:10px;
 
 
 }
 #calbin2{
     position:absolute;
     float:right;
-    margin-left:480px;
+    left:160px;
+    top:130px;
 
 }
+#chart{
+width:280px;
+height:280px;
+bottom:56px;
+position:absolute;
+left:1020px;
+z-index:4;
+}
+
+
 div.ui-datepicker, .ui-datepicker td{
- font-size:10px;
+ font-size:7px;
 }

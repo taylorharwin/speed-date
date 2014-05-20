@@ -4,7 +4,9 @@
   "dependencies": {
     "bootstrap": "~3.0.3",
     "jquery": "~1.11.0",
-    "momentjs": "~2.6.0"
+    "momentjs": "~2.6.0",
+    "d3": "~3.4.8",
+    "c3": "~0.1.42"
   },
   "devDependencies": {}
 }
