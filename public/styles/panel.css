@@ -4,7 +4,7 @@
             border-right: 1px solid #E0E0E0;
             box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), -1px -1px 0 rgba(255, 255, 255, 0.85) inset;
             position: fixed;
-            z-index: 65000;
+            z-index: 3;
             display: none;
         }
         .cb_slide_panel.panel_left, .cb_slide_panel.panel_right {

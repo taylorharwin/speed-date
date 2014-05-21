@@ -55,7 +55,7 @@ $("#may").on('click', function(){
         console.log(dateAsString);
         var dateAsString = $(this).datepicker("getDate");
         $(".plan1").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li');
-        chart.load({columns:[['Bookings by Month',,9,6,8,7,2,2,10,11,6,7,8,2]]});
+        chart.load({columns:[['Travel Frequency by Month',7,8,8,9,9,8,5,8,11,13,8,7]]});
       }
     });
   });
@@ -69,7 +69,7 @@ $("#jun").on('click', function(){
         console.log(dateAsString);
         var dateAsString = $(this).datepicker("getDate");
         $(".plan2").append('<li class="times">' + moment(dateAsString).format("dddd, MMMM Do YYYY") + '</li');
-      chart.load({columns:[['Bookings by Month',9,6,8,7,2,3,10,11,6,7,8,2]]});
+      chart.load({columns:[['Travel Frequency by Month',7,8,8,9,9,9,5,8,11,13,8,7]]});
       }
     });
 });
@@ -78,13 +78,22 @@ $("#jun").on('click', function(){
 var chart = c3.generate({
     bindto: '#chart',
     size: {
-        height: 280,
-        width: 280
+        height: 210,
+        width: 301
     },
         data: {
           columns: [
-      ['Bookings by Month',9,6,8,7,1,2,10,11,6,7,8,2]
+      ['Travel Frequency by Month',7,8,8,9,8,8,5,8,11,13,8,7]
       ],
+      type:'spline'
+    },
+    axis: {
+      y: {
+        show:false
+      },
+      x: {
+        show: false
+        }
     }
     });
 
